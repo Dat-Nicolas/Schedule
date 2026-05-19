@@ -19,7 +19,7 @@ app.get('/trigger-chat', async (req, res) => {
         // Ví dụ logic: Gọi sang API của Claude/Gemini, lấy câu trả lời rồi bắn về Telegram/Slack/Discord...
         const messageToSend = "Chào buổi sáng! Đây là tin nhắn tự động từ Cloud.";
         console.log(`Đang gửi tin nhắn: ${messageToSend}`);
-        
+         
         // Giả lập xử lý thành công
         res.status(200).send('Gửi tin nhắn thành công!');
     } catch (error) {
